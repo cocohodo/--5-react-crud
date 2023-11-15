@@ -4,7 +4,7 @@ const List = React.memo(({handleClick, handleEditClick, id, title, price, todoDa
       
   return (
     <div key={id} {...provided.draggableProps} ref={provided.innerRef} {...provided.dragHandleProps}
-        className={`${snapshot.isDragging ? "bg-green-200" : "bg-white"} flex items-center justify-between px-4 py-1 my-4 text-gray-600 border border-green-500 rounded hover:scale-105 transition-transform duration-500`}>
+        className={`${snapshot.isDragging ? "bg-green-200" : "bg-white"} flex items-center justify-between px-4 py-1 my-4 text-gray-600 border border-green-500 rounded hover:scale-y-125 transition-transform duration-500`}>
             <div className='items-center'>
               <span className='mr-4'>{title}</span>
             </div>
